@@ -1,6 +1,7 @@
 import React from 'react';
 import  './style/style.scss';
 import Header from './components/Header';
+import CaseProduit from './components/CaseProduit';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
           PS5
         </div>
       </div>
+      <CaseProduit/>
     </>
   )
 }
