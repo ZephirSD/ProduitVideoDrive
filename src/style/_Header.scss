@@ -1,0 +1,28 @@
+header{
+    width: calc(100% - 35px * 2);
+    padding: 0 35px;
+    height: 120px;
+    background: linear-gradient(180deg, #FFD762, #F76F1F);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    nav{
+        width: 55vw;
+        ul{
+            display: flex;
+            justify-content: space-evenly;
+            padding: 0;
+            li{
+                text-transform: uppercase;
+                color: white;
+                list-style-type: none;
+                font-size: 1.25rem;
+            }
+        }
+    }
+    div.telephone{
+        color: white;
+        font-weight: bold;
+        font-size: 1.2rem;
+    }
+}
