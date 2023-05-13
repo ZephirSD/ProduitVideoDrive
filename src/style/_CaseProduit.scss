@@ -1,0 +1,95 @@
+section.gridProduit{
+    width: var(--full-width);
+    height: calc(var(--full-height) - var(--padding_Ariane) * 2 - var(--height_header) * 2 - 18px);
+    display: grid;
+    grid-template-columns: repeat(2, min-content);
+    div.caseImageProduit{
+        width: calc(30vw - 1px);
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        border-right: 1px solid black;
+        div.caseImagePrinc{
+            width: 100%;
+            height: 60%;
+            background-image: url(../assets/ps5-1.png);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        div.caseImageSecond{
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            img{
+                border: 1px solid black;
+            }
+        }
+    }
+
+    div.caseInfoProduit{
+        width: calc(70vw - var(--padding_left_caseInfoProduit));
+        height: 100%;
+        padding-left: var(--padding_left_caseInfoProduit);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        h1.titreProduit{
+            font-size: 2.5rem;
+            text-transform: uppercase;
+        }
+        div.caseAvis{
+            display: grid;
+            grid-template-columns: repeat(2, max-content);
+            column-gap: 25px;
+            div.note{
+                img{
+                    padding: 0px 3px;
+                }
+            }
+            div.comment{
+                display: flex;
+                align-items: center;
+                font-weight: 500;
+                font-size: 1.25rem;
+            }
+        }
+        h2.prix{
+            font-size: 2.1rem;
+            font-weight: bold;
+            padding-left: 25px;
+        }
+        div.caseBtnPanier{
+            button{
+                background-color: black;
+                color: white;
+                padding: 15px 35px;
+                border-radius: 25px;
+                border: none;
+                transition: 0.3s ease-in-out;
+                cursor: pointer;
+                &:hover{
+                    background-color: white;
+                    color: black;
+                    transition: 0.3s ease-in-out;
+                    box-shadow: 2px 2px 15px 2px rgba(0, 0, 0, 0.418);
+                }
+            }
+        }
+        div.description{
+            p{
+                width: 30vw;
+            }
+        }
+        div.caseMessanger{
+            display: flex;
+            justify-content: flex-end;
+            padding-right: 25px;
+            padding-top: 25px;
+            img{
+                cursor: pointer;
+            }
+        }
+    }
+}
