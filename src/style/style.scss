@@ -5,6 +5,9 @@
 :root{
     --full-width: 100%;
     --full-height: 100vh;
+    --padding_Ariane: 25px;
+    --height_header: 120px;
+    --padding_left_caseInfoProduit: 40px;
 }
 
 body{
@@ -14,8 +17,8 @@ body{
 
 div.caseAriane{
     background-color: black;
-    padding: 25px 0px;
-    width: 100%;
+    padding: var(--padding_Ariane) 0px;
+    width: var(--full-width);
     div.filAriane{
         width: 250px;
         display: flex;
@@ -40,3 +43,4 @@ div.caseAriane{
 
 //Import de fichiers styles des composants
 @import url(_Header.scss);
+@import url(_CaseProduit.scss);
